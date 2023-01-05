@@ -1,5 +1,6 @@
 #Excercise 6 from Python Gently- Ordinal Suffix
 
+ordinalSuffix = { 0 : 'th', 1 : "st" , 2 :"nd" , 3 :"rd" , 4 : "th"}
 
 
 
