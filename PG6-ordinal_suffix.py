@@ -1,9 +1,16 @@
 #Excercise 6 from Python Gently- Ordinal Suffix
 
-ordinalSuffix = { 0: 'th', 1: "st" , 2:"nd" , 3:"rd" , 4: "th" ,
-                  5: "th", 6: "th", 7: "th", 8:"th", 9 :"th", 11:"th",
-                  12: "th",13: "th"}
+ordSuf = { 0: 'th', 1: "st" , 2:"nd" , 3:"rd" , 4: "th" ,
+           5: "th", 6: "th", 7: "th", 8:"th", 9 :"th", 11:"th",
+           12: "th",13: "th"}
 
+
+def ordinalSuffix(number):
+    if number in ordSuf:
+        return str(number) + str(ordSuf[number])
+    else:
+        lastdigit = str(number)[-1]
+        return (str(number) + ordSuf[int(lastdigit)])
 
 
 assert ordinalSuffix(0) == '0th'
