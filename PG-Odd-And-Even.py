@@ -1,22 +1,24 @@
-#Python Gently Odd & Even
+# Python Gently Odd & Even
+
 
 def isOdd(number):
     if type(number) == float:
-        return(False)
+        return False
 
     if number % 2 == 0:
-        return(False)
+        return False
     else:
-        return(True)    
+        return True
+
 
 def isEven(number):
     if type(number) == float:
-        return(False)    
+        return False
 
     if number % 2 == 0:
-        return(True)
+        return True
     else:
-        return(False)   
+        return False
 
 
 assert isOdd(42) == False
