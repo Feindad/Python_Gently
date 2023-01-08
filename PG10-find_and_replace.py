@@ -1,11 +1,12 @@
 ### Python Gently Ex-10 Find and Replace 
 
-def findAndReplace(text,oldText,newText):
+def find_replace(text,oldText,newText):
     text = text.replace(oldText,newText)
     return text
 
-
-
+def findAndReplace(text,oldText,newText):
+    pass
+        
 assert findAndReplace('The fox', 'fox', 'dog') == 'The dog'
 
 assert findAndReplace('fox', 'fox', 'dog') == 'dog'
