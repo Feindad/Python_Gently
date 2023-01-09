@@ -1,13 +1,25 @@
 ### Python Gently Ex-10 Find and Replace 
 #test edit 
 
+
 def find_replace(text,oldText,newText):
     text = text.replace(oldText,newText)
     return text
 
 def findAndReplace(text,oldText,newText):
-    pass
+    olen = len(oldText)
+    tlen = len(text)
+    nlen = len(newText)
+    for x in range(tlen):
         
+        if oldText in (text[x:x+olen]):
+            text = text[0:x] + newText + text[x+olen:]
+            print(text)
+            return text
+
+
+
+
 assert findAndReplace('The fox', 'fox', 'dog') == 'The dog'
 
 assert findAndReplace('fox', 'fox', 'dog') == 'dog'
