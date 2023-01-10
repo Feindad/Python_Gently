@@ -10,12 +10,14 @@ def findAndReplace(text,oldText,newText):
     olen = len(oldText)
     tlen = len(text)
     nlen = len(newText)
+    ntext = ""
+    ntext = text
+
     for x in range(tlen):
-        
-        if oldText in (text[x:x+olen]):
+        if oldText in (text[0:x+olen]):
             text = text[0:x] + newText + text[x+olen:]
-            print(text)
-            return text
+    print(text)
+    return text
 
 
 
@@ -26,7 +28,7 @@ assert findAndReplace('fox', 'fox', 'dog') == 'dog'
 
 assert findAndReplace('Firefox', 'fox', 'dog') == 'Firedog'
 
-assert findAndReplace('foxfox', 'fox', 'dog') == 'dogdog'
-
 assert findAndReplace('The Fox and fox.', 'fox', 'dog') == 'The Fox and dog.'
+
+assert findAndReplace('foxfox', 'fox', 'dog') == 'dogdog'
 
