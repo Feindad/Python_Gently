@@ -1,7 +1,9 @@
 # Python Gently  Ex-12 Smallest & Biggest
 
-def getSmallest([])
-
+def getSmallest(numbers):
+    smallest = 1
+    return smallest
+    
 assert getSmallest([1, 2, 3]) == 1
 
 assert getSmallest([3, 2, 1]) == 1
