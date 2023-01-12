@@ -1,7 +1,13 @@
 # Python Gently  Ex-12 Smallest & Biggest
 
 def getSmallest(numbers):
-    smallest = 1
+    if len(numbers) < 1:
+        return None
+    smallest = numbers[0]
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+        
     return smallest
     
 assert getSmallest([1, 2, 3]) == 1
