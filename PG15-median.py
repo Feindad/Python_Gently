@@ -1,7 +1,19 @@
 #Python Gently EX-15 Median
 
-
-
+def median(numbers):
+    l =len(numbers)
+    if l == 0:
+        return None
+    
+    numbers.sort()
+    
+    if l % 2 != 0:
+        med = l // 2
+        return numbers[med]
+    else:
+        m =  l // 2
+        med = (numbers[m] + numbers[m-1]) / 2
+        return med
 
 assert median([]) == None
 
