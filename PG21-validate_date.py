@@ -1,7 +1,21 @@
 #Python Gently Ex:21 Validate Date
+import isLeapYear
 
+def isValidDate(year, month, day):
+    thirtyOnes =[1,3,5,7,8,10,12]
 
+    if day == 31 and month not in thirtyOnes:
+        return False
+    
+    if month > 12 or month < 1:
+        return False
 
+    if day > 31 or day < 1:
+        return False
+    if isLeapYear.isLeapYear(year) == False and day == 29 and month == 2:
+        return False
+
+    return True
 
 assert isValidDate(1999, 12, 31) == True
 
