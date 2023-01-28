@@ -10,12 +10,20 @@ def shakes(names):
     return sum(x)
 
 def printHandshakes(names):
-
-    return shakes(names)
+    y = shakes(names)
+    a = len(names)
+    while len(names) > 0:
+        shaker = names[0]
+        for x in range(0,a):
+            if names[x] != shaker:
+                print( shaker + ' shakes with ' +names[x])
+        names.remove(names[0])    
+        a = len(names)
+    return y
 
 
 assert printHandshakes(['Alice', 'Bob']) == 1
 
-assert printHandshakes(['Alice', 'Bob', 'Carol']) == 3
+assert printHandshakes(['Alice', 'Barry', 'Carol']) == 3
 
-assert printHandshakes(['Alice', 'Bob', 'Carol', 'David']) == 6
+assert printHandshakes(['Alice', 'Billy', 'Carol', 'David']) == 6
