@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+[class~="hurrytimer-campaign"] {
+  line-height: normal;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 876px;
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: flex !important; /* Overwrites library styles */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+[class~="hurrytimer-campaign"] * {
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+}
+
+[class~="hurrytimer-campaign-side-rail"] * {
+  line-height: normal;
+  position: relative;
+  z-index: 1;
+}
+
+.dark-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.hurryt-loading {
+  display: none !important;
+}
+
+
+.hurrytimer-logo {
+  max-width: 85px;
+}
+
+
+.hurry-timer-upload-image-button {
+  margin-right: 5px;
+}
+
+.hurrytimer-timer-container {
+  border: 1px #fff;
+  border-left-style: dashed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  justify-content: center;
+  min-width: 230px !important /* Overwrites library styles */;
+  width: 100%;
+}
+
+.hurrytimer-timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.hurrytimer-campaign .hurrytimer-timer-digit {
+  color: rgb(255, 255, 255);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.hurrytimer-headline {
+  color: #333;
+}
+
+.hurrytimer-timer-date {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hurrytimer-headline-container {
+  align-items: center !important /* Overwrites library styles */;
+  display: flex;
+  flex: 6;
+  flex-direction: column;
+  margin: 0px 5px;
+  max-width: 70% !important /* Overwrites library styles */;
+  text-align: center !important /* Overwrites library styles */;
+  width: auto;
+  max-height: 70px;
+  white-space: break-spaces;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.hurrytimer-headline {
+  color: #fff;
+  font-family: 'Source Serif Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.hurrytimer-content {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  width: 100%;
+}
+
+.hurrytimer-timer-block {
+  padding: 0px 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 58px;
+}
+
+.hurrytimer-timer-label {
+  color: #fff;
+  font-family: 'Source Serif Pro', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.separator-line {
+  border-left: 1px solid #fff;
+  height: 45px;
+  bottom: -7px;
+}
+
+.separator-line-side-rail {
+  border-left: 1px solid #fff;
+  height: 45px;
+  bottom: -15px;
+}
+
+.hurry-side-rail {
+  width: 301px;
+  max-width: 100%;
+  min-height: 350px;
+  height: 350px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.timer-side-rail  {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+.hurrytimer-logo-side-rail  {
+  width: 60px;
+}
+
+.hurrytimer-image-field-container input{
+  width: 75%;
+}
+
+.hurrytimer-image-field-container button{
+  width: 20%;
+  text-align: center;
+}
+
+.hurrytimer-headline-container-side-rail {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  margin: 5px 2px;
+  height: 110px;
+  justify-content: center;
+  overflow: hidden;
+  width: 98%;
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+.hurrytimer-headline-side-rail  {
+  display: inline-block;
+  font-size: 26px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Source Serif Pro', sans-serif;
+  font-weight: 700;
+}
+
+.hurrytimer-content-side-rail {
+  font-size: 15px;
+  width: 100%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.hurrytimer-timer-container-side-rail {
+  border: 1px #fff;
+  border-top-style: dashed;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: auto;
+  width: 100%;
+  padding: 25px 0px;
+  justify-content: center;
+}
+
+.hurrytimer-timer-container-side-rail .hurrytimer-timer-date {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.hurrytimer-timer-container-side-rail .hurrytimer-timer-digit {
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.hurrytimer-timer-container-side-rail .hurrytimer-timer-label {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.hurrytimer-timer-block:last-child {
+  margin-right: 0;
+}
+
+.hurrytimer-timer-block:first-child {
+  margin-left: 0;
+}
+
+.hurrytimer-sticky {
+  margin: auto !important;
+  width: 100%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  position: fixed;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hurrytimer-sticky.is-off {
+  position: relative;
+  z-index: 0;
+}
+
+.admin-bar:not(.wp-admin) .hurrytimer-sticky {
+  z-index: 999999;
+}
+
+.hurrytimer-sticky-inner {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.hurrytimer-button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+.hurrytimer-sticky-close {
+  right: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  display: flex;
+}
+
+.hurrytimer-sticky-close svg {
+  fill: #333;
+  width: 100%;
+  height: 100%;
+}
+
+.hurrytimer-sticky-close:hover {
+  opacity: 1;
+  background: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  [class~="hurrytimer-campaign"] {
+    width: 300px;
+    max-width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    min-height: 350px;
+    height: 350px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .hurrytimer-headline-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: unset;
+    margin: 5px 2px;
+    max-height: 156px;
+    max-width: 100% !important /* Overwrites desktop styles */;
+    width: 98%;
+    white-space: break-spaces;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+  .hurrytimer-timer-container {
+    border: 1px #fff;
+    border-left-style: none;
+    border-top-style: dashed;
+    display: flex;
+    flex-grow: 1;
+    height: unset;
+    max-width: 100%;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+  }
+
+  .hurrytimer-timer-block {
+    width: 65px;
+  }
+  
+  .hurrytimer-logo {
+    width: 60px;
+  }
+
+  .separator-line {
+    border-left: 1px solid #fff;
+    height: 45px;
+    bottom: -7px;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  [class~="hurrytimer-campaign"] {
+    width: 300px;
+    max-width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    min-height: 350px;
+    height: 350px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .hurrytimer-headline-container {
+    display: flex;
+    flex-grow: 1;
+    margin: 5px 2px;
+    max-height: 156px;
+    max-width: 100% !important /* Overwrites desktop styles */;
+    width: 98%;
+    white-space: break-spaces;
+    overflow: hidden;
+    word-break: break-word;
+  }
+
+  .hurrytimer-timer-container {
+    border: 1px #fff;
+    border-left-style: none;
+    border-top-style: dashed;
+    display: flex;
+    flex-grow: 1;
+    height: unset;
+    max-width: 100%;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+  }
+  
+
+  .hurrytimer-logo {
+    width: 60px;
+  }
+
+  .separator-line {
+    border-left: 1px solid #fff;
+    height: 45px;
+    bottom: -7px;
+  }
+
+  headline.hurrytimer- {
+    display: block;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hurrytimer-content {
+    font-size: 15px;
+    width: 100%;
+  }
+}
