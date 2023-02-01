@@ -1,30 +1,26 @@
-#Python Gently Ex31 Convert integers to strings
-
-def convertIntToStr(number):
-    strnum =''    
-    if number < 0:
-        strnum = ('-')
-    num = abs(number)
-    ex = 1
+##Python Gently Ex31 Convert to string
+def rDig(num):
     numlist = ['0','1','2','3','4','5','6','7','8','9']
-    while num >=1:
-     
-        while num >= 10:
-                ex = ex * 10
-                num = num/10
-                if round((num - int(num))*10) == 0:
-                    strnum = strnum + '0'
-        dig = int(num//1)
-        print(dig)
-        ret = numlist[dig]
-        strnum = strnum + (ret)
-        rem = num - dig
-        num =round(ex * rem)
-        ex = 1
-    return strnum
-
-
+    rem = round(10 * (abs(num/10)- int(abs(num/10))))
     
-for i in range(-99, 99):
-    print(i)
+    return numlist[rem]
+    
+def convertIntToStr(num):
+     if num == 0:
+         return "0"
+     numString=''
+     if num <0:
+         neg = '-'
+     else:
+         neg =''
+     
+     num = abs(num)
+     while num != 0:      
+    
+         numString = (rDig(num))+ numString 
+         num = num//10   
+
+     return neg + numString
+
+for i in range(-10000, 10000):
     assert convertIntToStr(i) == str(i)
