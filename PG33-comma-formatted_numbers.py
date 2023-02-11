@@ -1,12 +1,7 @@
 ##Python Gently Ex33 Comma-Formatted Numbers
 
 def commaFormat(num):
-    strnum = str(num)
-    l = len(strnum)
-    for x in range(2,-1,-1):
-        print(strnum[x], end='')  
-    return
-
+    return "{:,}".format(num)
 
 assert commaFormat(1) == '1'
 
