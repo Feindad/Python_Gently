@@ -1,2 +1,3 @@
 ﻿Goal of this folder is to redo all the python gently Exercises on My Z80.
 How I get them to github?  Good question.   Guess I’ll I figure it out as I go.
+PG1-Hello.bas done in the NABU Emulator running cp/m and ms basic.
